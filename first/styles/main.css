@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image:linear-gradient(-45deg, #333, #666) !important; */
+    background: #444 !important;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 243, 190) !important;
+}
+/* .red {
+    background: grey;
+}
+.green {
+    background: #555;
+}
+.blue {
+    background: blue;
+} */
+.ht {
+    height: 250px;
+} 
+.ht-lg {
+    height: 500px;
+}
+.hero-img {
+    background-image: /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */ url("../img/guitar-hero.jpeg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  z-index: 0;
+}
+.quote-col {
+    height: 180px;
+    background: rgba(85, 85, 85, 0.5);
+
+}
+
+.welcome-text {
+    position: absolute;
+    text-align: left;
+    color: #ffc7ff;
+    text-shadow: -3px 3px 3px rgb(151, 151, 151);
+    top: 45%;
+    left: 5%;
+}
+
+.vertical-mr-lg {
+    margin-top: 100px;
+}
+.vertical-mr-md {
+    margin-top: 75px;
+}
+.vertical-mr-sm {
+    margin-top: 35px;
+}
+
+.vertical-mr-xs {
+    margin-top: 20px;
+}
+
+.horizontal-pd-md {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+}
+
+.horizontal-pd-sm {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #999;
+    background: #999;
+    color: #999;
+    text-align: center;
+    width: 30%;
+
+}
+
+hr:after {
+    content: "♬";
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #444;
+}
+
+.has-overlay {
+    transition: all .5s ease-in-out;
+}
+
+.has-overlay:hover {
+    opacity: .3;
+}
+
+a {
+    display: block;
+    text-decoration: none !important;
+}
+a:hover {
+    color: rgb(248, 209, 37) !important;
+}
+
+.img-fit {
+    height: 100%;
+}
+
+.img-thumb-1 {
+    background-image: url("../img/seth-macey-340997-unsplash.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-thumb-2 {
+    background-image: url("../img/pexels-photo-1407322.jpeg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
