@@ -7,7 +7,12 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Charm:400,700"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -17,81 +22,371 @@
     <title>GuitarHub</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  navbar-inverse">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark navbar-inverse top-nav"
+    >
       <a class="navbar-brand" href="#">GuitarHub</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#"
+              >Home<span class="sr-only">(current)</span></a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tutorials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Music</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
-          </li>
-          </ul>
-
+          <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        </ul>
       </div>
     </nav>
     <div class="hero-img"></div>
-    <h1 class="welcome-text">The Guitar Players Hub.</h1>
-    <hr class="vertical-mr-md"/>
-    
-    <div class="container vertical-mr-lg horizontal-pd">
-      <div class="row">
-        <div class="col-md-4 vertical-mr-sm">
-          <img src="img/classical1.jpeg" class="img-fluid rounded has-overlay" alt="Calssical guitar">
-          <a href="#/" class="text-center h4">Classical Guitar</a>
+    <!-- <h1 class="welcome-text">The Guitar Players Hub.</h1> -->
+
+    <div class="container horizontal-pd vertical-mr-lg">
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-4 col-7">
+          <div class="img-left">
+            <img
+              src="img/classical1.jpeg"
+              class="img-fluid has-overlay animated slideInLeft slow"
+              alt="Calssical guitar"
+            />
+          </div>
+          <!-- <a href="#/" class="h6 text-center">Classical Guitar</a> -->
         </div>
-        <div class="col-md-4 vertical-mr-sm">
-          <img src="img/acoustic1.jpeg" class="img-fluid rounded has-overlay" alt="Acoustic guitar">
-          <a href="#/" class="text-center h4">Acoustic Guitar</a>
+        <div class="col-md-3 col-sm-4 col-7">
+          <div class="img-center">
+            <img
+              src="img/acoustic1.jpeg"
+              class="img-fluid has-overlay animated slideInDown slow"
+              alt="Acoustic guitar"
+            />
+          </div>
+          <!-- <a href="#/" class="h6 text-center">Acoustic Guitar</a> -->
         </div>
-        <div class="col-md-4 vertical-mr-sm">
-          <img src="img/electric1.jpeg" class="img-fluid rounded has-overlay" alt="Electric guitar">
-          <a href="#/" class="text-center h4">Electric Guitar</a>
-        </div>
-      </div>
-    </div>
-    <hr class="vertical-mr-md"/>
-    <div class="container vertical-mr-lg horizontal-pd">
-      <div class="row no-gutters">
-        <div class="col-md-6 ht rounded border border-dark img-thumb-1">
-        </div>
-        <div class="col-md-6 rounded bg-dark border border-dark horizontal-pd-sm ht border">
-          <h2 class="h3 vertical-mr-sm">Heading</h2>
-          <ul class="list-inline">
-            <li class="list-inline-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-            <li class="list-inline-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-          </ul>
-          <button class="btn btn-outline-warning">Go there</button>
-        </div>
-        <div class="col-md-6 rounded bg-dark border border-dark horizontal-pd-sm ht border">
-          <h2 class="h3 vertical-mr-sm">Heading</h2>
-          <ul class="list-inline">
-            <li class="list-inline-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-            <li class="list-inline-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-          </ul>
-         <button class="btn btn-outline-warning">Start now</button>
-        </div>
-        <div class="col-md-6 ht rounded border border-dark img-thumb-2">
+        <div class="col-md-3 col-sm-4 col-7">
+          <div class="img-right">
+            <img
+              src="img/electric1.jpeg"
+              class="img-fluid has-overlay img-right animated slideInRight slow"
+              alt="Electric guitar"
+            />
+          </div>
+
+          <!-- <div class="rounded has-overlay img-right"></div> -->
+          <!-- <a href="#/" class="h6 text-center">Electric Guitar</a> -->
         </div>
       </div>
     </div>
-    <hr class="vertical-mr-md"/>  
-    <div class="container-fluid vertical-mr-lg">
-      <div class="row">
-        <div class="col quote-col"></div>
+    <div class="container vertical-mr-xg horizontal-pd">
+      <div class="row no-gutters justify-content-center">
+        <div
+          class="col-md-4 col-sm-6 col-10  ht border border-dark img-thumb-1"
+        >
+      
+    </div>
+        <div
+          class="col-md-4 col-sm-6 col-10  bg-dark border border-dark horizontal-pd-sm ht border"
+        >
+          <h2 class="h4 vertical-mr-sm">Heading</h2>
+          <ul class="list-inline list-text">
+            <li class="list-inline-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li class="list-inline-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+          <button class="btn btn-outline-warning list-btn">Go there</button>
+        </div>
+      </div>
+    </div>
+    <div class="container horizontal-pd">
+      <div class="row no-gutters justify-content-center">
+        <div
+          class="col-md-4 col-sm-6 col-10 bg-dark border border-dark horizontal-pd-sm ht border"
+        >
+          <h2 class="h4 vertical-mr-sm">Heading</h2>
+          <ul class="list-inline list-text">
+            <li class="list-inline-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li class="list-inline-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+          <button class="btn btn-outline-warning list-btn">Start now</button>
+        </div>
+        <div
+          class="col-md-4 col-sm-6 col-10 ht border border-dark img-thumb-2"
+        ></div>
       </div>
     </div>
 
+    <div class="container-fluid quote vertical-mr-xg">
+      <div class="row justify-content-center">
+        <div class="col-9 quote-col">
+          <blockquote class="blockquote text-center blockquote-area">
+            <p class="mb-2 mt-5 lead text-warning animated pulse">
+              Music doesn’t lie. If there is something to be changed in this
+              world, then it can only happen through music.
+            </p>
+            <footer class="blockquote-footer animated pulse">Jimi Hendrix</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!--    <div class="container-fluid vertical-mr-xg"">
+      <div class="row">
+        <div class="col-md-3 ht quarter-col">
+          <img
+            src="img/pexels-photo-534283.jpeg"
+            class="float-left rounded vertical-mr-sm horizontal-pd-sm img-fluid"
+            alt=""
+          />
+          <p class="mb-0 vertical-mr-sm small">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="col-md-3 quarter-col">
+          <iframe
+            class="vertical-mr-sm"
+            width="100%"
+            height="auto"
+            src="https://www.youtube.com/embed/gc6QQy17zzI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="col-md-3 quarter-col">
+          <img
+            src="img/pexels-photo-1010518.jpeg"
+            class="float-left rounded vertical-mr-sm horizontal-pd-sm img-fluid"
+            alt=""
+          />
+          <p class="mb-0 vertical-mr-sm small">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="col-md-3 quarter-col">
+          <img
+            src="img/pexels-photo-65718.jpeg"
+            class="rounded vertical-mr-sm img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+    </div> -->
+    <div class="container-fluid bg-dark ht vertical-mr-xg">
+      <div class="row">
+        <footer class="col-md-3 page-footer ht">
+          <div class="container-fluid">
+            <div class="row">
+              <h3 class="col-12 h4 vertical-mr-sm">Follow Us</h3>
+              <svg
+                class="col-3 vertical-mr-xs"
+                enable-background="new 0 0 32 32"
+                height="32px"
+                id="Layer_1"
+                version="1.0"
+                viewBox="0 0 32 32"
+                width="32px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <path
+                    d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                    fill="#3B5998"
+                  />
+                  <path
+                    d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z"
+                    fill="#FFFFFF"
+                    id="f"
+                  />
+                </g>
+                <g />
+                <g />
+                <g />
+                <g />
+                <g />
+                <g />
+              </svg>
+              <svg
+                class="col-3 vertical-mr-xs"
+                version="1.1"
+                height="32"
+                width="32"
+                viewBox="0 0 141.332992553711 141.332992553711"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <linearGradient
+                    id="def0"
+                    x1="0.500005"
+                    x2="0.500004"
+                    y1="1"
+                    y2="4.64241E-06"
+                  >
+                    <stop offset="0" stop-color="#5982DF" />
+                    <stop offset="1" stop-color="#54AACD" />
+                  </linearGradient>
+                </defs>
+                <g>
+                  <path
+                    d="M17.3333,0C7.76,0,0,7.75999,0,17.3333L0,124C0,133.573,7.76,141.333,17.3333,141.333L124,141.333C133.573,141.333,141.333,133.573,141.333,124L141.333,17.3333C141.333,7.75999,133.573,0,124,0L17.3333,0z"
+                    fill="url(#def0)"
+                  />
+                  <path
+                    d="M122.988,38.2136C119.139,39.9216 115,41.0749 110.658,41.5923 115.09,38.9363 118.494,34.7296 120.098,29.7149 115.95,32.1763 111.355,33.9616 106.464,34.9256 102.548,30.7523 96.9683,28.1456 90.7936,28.1456 78.9363,28.1456 69.3256,37.7576 69.3256,49.6136 69.3256,51.2976 69.5163,52.9363 69.8816,54.5069 52.0389,53.6109 36.2189,45.0656 25.6296,32.0749 23.7829,35.2469 22.7243,38.9349 22.7243,42.8683 22.7243,50.3176 26.5149,56.8883 32.2736,60.7389 28.7549,60.6283 25.4443,59.6603 22.5496,58.0523 22.5496,58.1416 22.5483,58.2323 22.5483,58.3243 22.5483,68.7243 29.9483,77.4029 39.7709,79.3736 37.9683,79.8656 36.0709,80.1269 34.1136,80.1269 32.7296,80.1269 31.3856,79.9923 30.0736,79.7416 32.8056,88.2723 40.7363,94.4789 50.1283,94.6523 42.7816,100.41 33.5243,103.843 23.4669,103.843 21.7349,103.843 20.0243,103.742 18.3456,103.543 27.8469,109.634 39.1309,113.187 51.2563,113.187 90.7429,113.187 112.339,80.4749 112.339,52.1029 112.339,51.1723 112.316,50.2469 112.275,49.3256 116.47,46.3003 120.111,42.5189 122.988,38.2136z"
+                    fill="#FFFFFF"
+                  />
+                </g>
+              </svg>
+              <svg
+                class="col-3 vertical-mr-xs"
+                height="32"
+                style="overflow:visible;enable-background:new 0 0 32 32"
+                viewBox="0 0 32 32"
+                width="32"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <g id="Instagram_1_">
+                    <g id="Instagram">
+                      <path
+                        d="M28,0H4C1.8,0,0,1.8,0,4v8h32V4C32,1.8,30.2,0,28,0z"
+                        id="Head"
+                        style="fill:#895A4D;"
+                      />
+                      <path
+                        d="M2,0.6V12h2V0C3.3,0,2.6,0.2,2,0.6z"
+                        id="Red_x5F_Stripes"
+                        style="fill:#FF3939;"
+                      />
+                      <rect
+                        height="12"
+                        id="Yellow_x5F_Stripes"
+                        style="fill:#FED049;"
+                        width="2"
+                        x="4"
+                      />
+                      <rect
+                        height="12"
+                        id="Green_x5F_Stripes"
+                        style="fill:#10DD76;"
+                        width="2"
+                        x="6"
+                      />
+                      <rect
+                        height="12"
+                        id="Blue_x5F_Stripes"
+                        style="fill:#5FCCFF;"
+                        width="2"
+                        x="8"
+                      />
+                      <circle
+                        cx="26"
+                        cy="6"
+                        id="Lens_1_"
+                        r="3"
+                        style="fill:#162838;"
+                      />
+                      <circle
+                        cx="26"
+                        cy="6"
+                        id="Lens_x5F_Outer"
+                        r="1.5"
+                        style="fill:#2C4356;"
+                      />
+                      <circle
+                        cx="26"
+                        cy="6"
+                        id="Lens_x5F_Inside"
+                        r="0.5"
+                        style="fill:#47637A;"
+                      />
+                      <path
+                        d="M0,12v16c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V12H0z"
+                        id="Body"
+                        style="fill:#E5E0DC;"
+                      />
+                      <g id="Shadow">
+                        <polygon
+                          points="24.7,12 22.4,9.6 22.4,12 "
+                          style="fill:#75483D;"
+                        />
+                        <path
+                          d="M20,12L9.6,22.4l9.6,9.6H28c2.2,0,4-1.8,4-4v-8.7L24.7,12H20z"
+                          style="fill:#D0CBC5;"
+                        />
+                      </g>
+                      <circle
+                        cx="16"
+                        cy="16"
+                        id="Lens"
+                        r="9"
+                        style="fill:#DCD7D3;"
+                      />
+                      <circle
+                        cx="16"
+                        cy="16"
+                        id="Inside_x5F_Lens"
+                        r="7"
+                        style="fill:#162838;"
+                      />
+                      <circle
+                        cx="16"
+                        cy="16"
+                        id="_x32_nd_Inner_Circle"
+                        r="4"
+                        style="fill:#2C4356;"
+                      />
+                      <circle
+                        cx="16"
+                        cy="16"
+                        id="Middle_Circle"
+                        r="2"
+                        style="fill:#162838;"
+                      />
+                      <circle
+                        cx="18.5"
+                        cy="13.5"
+                        id="Reflection"
+                        r="1.5"
+                        style="fill:#47637A;"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </footer>
+        <footer class="col-md-9 page-footer-right"></footer>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
