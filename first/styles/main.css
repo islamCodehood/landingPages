@@ -8,8 +8,11 @@ body {
   width: 100%;
   height: 100%;
   color: rgb(255, 243, 190) !important;
-  font-family: 'Charm', cursive !important;
-  font-weight: bold;    
+  /* font-family: 'Charm', cursive !important; */
+  font-family: 'Shadows Into Light'!important;
+/* font-family: 'Dancing Script' !important; */
+  font-weight: 700 !important;   
+  letter-spacing: 2px; 
 }
 
 .top-nav {
@@ -48,7 +51,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 60px);
 }
 
 
@@ -58,7 +61,7 @@ h2 {
 
 }
 
-.quote-col:after {
+/* .quote-col:after {
     content: "";
     position: absolute;
     top: -5%;
@@ -67,29 +70,17 @@ h2 {
     height: 200%;
     
     z-index: -1;
-} 
+} */ 
 
-/* .blockquote-area {
-    position: relative;
-}
-
-.blockquote-area:after {
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    width:60%;
-    height: 100%;
-    background: #ffc107;
-} */
 
 .welcome-text {
   position: absolute;
   text-align: left;
-  color: #ffc7ff;
-  text-shadow: -3px 3px 3px rgb(151, 151, 151);
+  /* color: #ffc7ff; */
+  /* text-shadow: -3px 3px 3px rgb(151, 151, 151); */
   top: 45%;
   left: 5%;
+  background: #222;
 }
 .vertical-mr-xg {
     margin-top: 200px;
@@ -166,22 +157,7 @@ a:hover {
   background-size: cover;
   position: relative;
 }
-.img-thumb-1:after {
-  content: "";
-  position: absolute;
-  top: -15%;
-  left: -15%;
-  height: 100%;
-  width: 100%;
-  background: #ffc107 ;
-  z-index: -100;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-}
+
 .img-thumb-2 {
   background-image: url("../img/pexels-photo-1407322.jpeg");
   background-position: center;
@@ -189,22 +165,7 @@ a:hover {
   background-size: cover;
   position: relative;
 }
-.img-thumb-2:after {
-  content: "";
-  position: absolute;
-  top: 15%;
-  right: -15%;
-  height: 100%;
-  width: 100%;
-  background: #ffc107 ;
-  z-index: -100;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-}
+
 .quarter-col {
   position: relative;
 }
@@ -235,9 +196,7 @@ a:hover {
 .page-footer-right {
   border-top: 3px solid #ffc107;
 }
-.img-right {
-  position: relative;
-}
+
 
 .img-left,
 .img-right,
@@ -247,50 +206,7 @@ a:hover {
   position: relative;
 }
 
-.img-right:after {
-  content: "";
-  position: absolute;
-  top: 15%;
-  right: -15%;
-  height: 100%;
-  width: 100%;
-  background: #49525a;
-  z-index: -1;
-}
 
-.img-center:after {
-  content: "";
-  position: absolute;
-  top: 15%;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: #49525a;
-  z-index: -1;
-}
-
-.img-left:after {
-  content: "";
-  position: absolute;
-  top: 15%;
-  left: -15%;
-  height: 100%;
-  width: 100%;
-  background: #49525a;
-  z-index: -1;
-}
-
-.img-left:after,
-.img-right:after,
-.img-center:after {
-  transition: all 0.3s ease-in-out;
-}
-
-.img-left:hover::after,
-.img-right:hover::after,
-.img-center:hover::after {
-  background: #ffc107;
-}
 
 
 .quote {
@@ -341,11 +257,13 @@ a:hover {
       -webkit-transform: translate3d(100%, 0, 0);
       transform: translate3d(100%, 0, 0);
       visibility: visible;
+      background: #49525a;
     }
   
     to {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
+      background: #ffc107;
     }
   }
 
@@ -370,13 +288,131 @@ a:hover {
         position: absolute;
         content: "";
         top: 100%;
-        left: 10%;
+        left: 12%;
         background: #444;
-        width: 80%;
+        width: 76%;
         height: 1725px;
         z-index: -2000;
         -webkit-box-shadow: 0px 0px 26px 5px #444;
--moz-box-shadow: 0px 0px 26px 5px #444;
-box-shadow: 0px 0px 26px 5px #444;
+        -moz-box-shadow: 0px 0px 26px 5px #444;
+        box-shadow: 0px 0px 26px 5px #444;
     }
+    .quote-col:before {
+      position: absolute;
+      content: "";
+      top: -21%;
+      left: 0;
+      border-top: 10% solid transparent;
+      border-right: 10% solid red;
+      border-bottom: 10% solid red;
+      border-left: 10% solid transparent;
+    }
+    .quote-col:after {
+      position: absolute;
+      content: "";
+      top: -23%;
+      right: 0;
+      border-top: 15px solid transparent;
+      border-left: 15px solid rgb(63, 31, 63);
+      border-bottom: 15px solid rgb(63, 31, 63);
+      border-right: 15px solid transparent;
+    }
+}
+
+@media screen and (min-width: 575px) {
+  .img-right:after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: -15%;
+    height: 100%;
+    width: 100%;
+    background: #49525a;
+    z-index: -1;
+  }
+  
+  .img-center:after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #49525a;
+    z-index: -1;
+  }
+  
+  .img-left:after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: -15%;
+    height: 100%;
+    width: 100%;
+    background: #49525a;
+    z-index: -1;
+  }
+  
+  .img-left:after,
+  .img-right:after,
+  .img-center:after {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .img-left:hover::after {
+    background: #ffc107;
+    top: 30%;
+    left: -30%;
+  }
+  .img-right:hover::after {
+    background: #ffc107;
+    color: violet;
+    top: 30%;
+    right: -30%;
+  }
+  .img-center:hover::after {
+    background: #ffc107;
+    top: 30%;
+  }
+  .img-thumb-1:after {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    height: 100%;
+    width: 100%;
+    background: #ffc107;
+    z-index: -100;
+    
+  }
+  .img-thumb-1.anim1:after {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+  }
+  .img-thumb-2:after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: -15%;
+    height: 100%;
+    width: 100%;
+    background: #ffc107; 
+    z-index: -100;
+    
+  }
+  .img-thumb-2.anim2:after {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+  }
+  .img-thumb-2 {
+    order: 4;
+  }
 }
