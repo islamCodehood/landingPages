@@ -3,14 +3,11 @@
 }
 
 body {
-  /* background-image:linear-gradient(-45deg, #333, #666) !important; */
   background: #666555 !important;
   width: 100%;
   height: 100%;
   color: rgb(255, 243, 190) !important;
-  /* font-family: 'Charm', cursive !important; */
-  font-family: "Shadows Into Light" !important;
-  /* font-family: 'Dancing Script' !important; */
+  font-family: 'Lato', sans-serif !important;
   font-weight: 700 !important;
   letter-spacing: 2px;
 }
@@ -57,21 +54,17 @@ h2 {
 .quote-col {
   background: rgb(63, 31, 63);
   position: relative;
+  border-radius: 2px;
   -webkit-box-shadow: inset 0px 0px 100px -30px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 0px 100px -30px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 0px 100px -30px rgba(255, 255, 255, 0.5);
+  letter-spacing: .5px;
 }
 
-/* .quote-col:after {
-    content: "";
-    position: absolute;
-    top: -5%;
-    left: 2%;
-    width:96%;
-    height: 200%;
-    
-    z-index: -1;
-} */
+
+.hidden {
+  display: none;
+}
 
 .welcome-text {
   position: absolute;
@@ -317,7 +310,7 @@ a:hover {
 
 @media screen and (min-width: 575px) {
   .img-right:after {
-    content: "";
+    content: "Electric guitar";
     position: absolute;
     top: 15%;
     right: -15%;
@@ -328,10 +321,14 @@ a:hover {
     -moz-box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 0.78);
     box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 0.78);
     z-index: -1;
+    color: #49525a;
+    padding-top: 55%;
+    text-align: center;
+    font-size: 1.25rem;
   }
 
   .img-center:after {
-    content: "";
+    content: "Acoustic guitar";
     position: absolute;
     top: 15%;
     right: 0;
@@ -342,10 +339,14 @@ a:hover {
     -moz-box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 0.78);
     box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 0.78);
     z-index: -1;
+    color: #49525a;
+    padding-top: 55%;
+    text-align: center;
+    font-size: 1.25rem;
   }
 
   .img-left:after {
-    content: "";
+    content: "Classic guitar";
     position: absolute;
     top: 15%;
     left: -15%;
@@ -356,6 +357,10 @@ a:hover {
     -moz-box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 0.78);
     box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 0.78);
     z-index: -1;
+    color: #49525a;
+    padding-top: 55%;
+    text-align: center;
+    font-size: 1.25rem;
   }
 
   .img-left:after,
@@ -377,7 +382,6 @@ a:hover {
     -webkit-box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 1);
     -moz-box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 1);
     box-shadow: inset 0px 0px 130px -38px rgba(255, 255, 255, 1);
-    color: violet;
     top: 30%;
     right: -30%;
   }
