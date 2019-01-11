@@ -1,3 +1,4 @@
+window.onload = () => {
 //inside viewport
 var insideViewport = function(args) {
   window.onscroll = function() {
@@ -39,73 +40,105 @@ var insideViewport = function(args) {
   };
 };
 
-if (window.innerWidth > 575) {
-  insideViewport([
-    {
-      classesNames: ["g1-img"],
-    position: 0,
-    action: function(elements) {
-      elements.classList.add("slideInLeft");
-    }
-    },
-    {
-      classesNames: ["g2-img"],
-    position: 0,
-    action: function(elements) {
-      elements.classList.add("slideInDown");
-    }
-    },
-    {
-      classesNames: ["g3-img"],
-    position: 0,
-    action: function(elements) {
-      elements.classList.add("slideInRight");
-    }
-    },
-    {
-      classesNames: ["img-thumb-1"],
-      position: 0,
-      action(element) {
-        element.classList.add("anim1");
-      }
-    },
-    {
-      classesNames: ["img-thumb-2"],
-      position: 0,
-      action(element) {
-        element.classList.add("anim2");
-      }
-    }
-  ])
-} else {
-  insideViewport([
-    {
-      classesNames: ["g1-img", "g3-img"],
+  if (window.innerWidth > 575) {
+    insideViewport([
+      {
+        classesNames: ["g1-img"],
       position: 0,
       action: function(elements) {
         elements.classList.add("slideInLeft");
       }
-    },
-    {
-      classesNames: ["g2-img"],
+      },
+      {
+        classesNames: ["g2-img"],
       position: 0,
-      action(element) {
-        element.classList.add("slideInRight");
+      action: function(elements) {
+        elements.classList.add("slideInDown");
       }
-    },
-    {
-      classesNames: ["img-thumb-1"],
+      },
+      {
+        classesNames: ["g3-img"],
       position: 0,
-      action(element) {
-        element.classList.add("anim1");
+      action: function(elements) {
+        elements.classList.add("slideInRight");
       }
-    },
-    {
-      classesNames: ["img-thumb-2"],
-      position: 0,
-      action(element) {
-        element.classList.add("anim2");
+      },
+      {
+        classesNames: ["img-thumb-1"],
+        position: 0,
+        action(element) {
+          element.classList.add("anim1");
+        }
+      },
+      {
+        classesNames: ["img-thumb-2"],
+        position: 0,
+        action(element) {
+          element.classList.add("anim2");
+        }
       }
-    }
-  ])
+    ])
+  } else {
+    insideViewport([
+      {
+        classesNames: ["g1-img", "g3-img"],
+        position: 0,
+        action: function(elements) {
+          elements.classList.add("slideInLeft");
+        }
+      },
+      {
+        classesNames: ["g2-img"],
+        position: 0,
+        action(element) {
+          element.classList.add("slideInRight");
+        }
+      },
+      {
+        classesNames: ["img-thumb-1"],
+        position: 0,
+        action(element) {
+          element.classList.add("anim1");
+        }
+      },
+      {
+        classesNames: ["img-thumb-2"],
+        position: 0,
+        action(element) {
+          element.classList.add("anim2");
+        }
+      }
+    ])
+  }
+
+  (function quoteChanger() {
+    const quotes = [...document.getElementsByClassName('blockquote-area')]
+
+    setInterval((() => {
+        var i = 0;
+        return function() {
+          if(i > 4){
+            quotes[i-5].classList.remove('hidden')
+            quotes[i-5].classList.add('fadeIn')
+            quotes[4].classList.add('hidden')
+
+            i = 0
+          } else if (i === 4) {
+            quotes[4].classList.remove('hidden')
+            quotes[i-1].classList.add('hidden')
+            quotes[i-1].classList.add('fadeIn')
+            i++
+          } else {
+            quotes[i].classList.add('hidden')
+            quotes[i].classList.add('fadeIn')
+            quotes[i+1].classList.remove('hidden')
+            i++
+          }
+          return i
+        }
+
+    })(), 4000)  
+  })()
 }
+
+
