@@ -1,0 +1,58 @@
+/**layout**/
+html {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+body {
+    padding: 0 100px !important;
+    margin: 0 !important;
+    background: beige;
+}
+.pl-custom {
+    padding-left: 120px !important;
+}
+.pr-custom {
+    padding-right: 120px !important;
+}
+.pl-custom-2 {
+    padding-left: 30px !important;
+}
+.pr-custom-2 {
+    padding-right: 30px !important;
+}
+.half-vh {
+    height: 55vh !important;
+}
+
+.quaretr-vh {
+    height: 40vh !important;
+}
+.less-vh {
+    height: 20vh;
+}
+
+.copy-right {
+    margin-top: 1rem;
+}
+
+/**test**/
+
+.black {
+    background: #000;
+    color: #eee;
+}
+.blue {
+    background: navy;
+}
+.green {
+    background: green;
+}
+.yellow {
+    background: yellow;
+}
+.lemon {
+    background: lime;
+}
+.emerald {
+    background: seagreen;
+}
