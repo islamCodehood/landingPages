@@ -2,10 +2,8 @@
 html {
     padding: 0 !important;
     margin: 0 !important;
-    
 }
 body {
-    padding: 0 100px !important;
     margin: 0 !important;
     background: #111;
 }
@@ -119,4 +117,21 @@ body {
 }
 .bg-beige {
     background: beige;
+}
+
+
+/**media queries**/
+@media (min-width: 320px) {
+
+}
+@media (min-width: 768px) {
+ 
+}
+@media (min-width: 992px) {
+    body {
+        padding: 0 115px !important;
+    }
+}
+@media (min-width: 1200px) {
+ 
 }
