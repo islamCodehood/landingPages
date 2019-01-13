@@ -2,11 +2,12 @@
 html {
     padding: 0 !important;
     margin: 0 !important;
+    
 }
 body {
     padding: 0 100px !important;
     margin: 0 !important;
-    background: beige;
+    background: #111;
 }
 .pl-custom {
     padding-left: 120px !important;
@@ -34,11 +35,68 @@ body {
 .copy-right {
     margin-top: 1rem;
 }
+.bg-img-1 {
+    background-image: url("../img/mantalking.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img-2 {
+    background-image: url("../img/laptop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.short {
+    height: 16px;
+}
 
+.bg-logo-1 {
+    background-image: url("../img/logo-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.bg-logo-2 {
+    background-image: url("../img/logo-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-delay: .3s !important;
+}
+.bg-logo-3 {
+    background-image: url("../img/logo-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-delay: .6s !important;
+}
+.bg-logo-4 {
+    background-image: url("../img/logo-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-delay: .9s !important;
+}
+.bg-logo-5 {
+    background-image: url("../img/logo-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-delay: 1.2s !important;
+}
+.txt-beige-shadow {
+    color: #d6d6c2;
+}
 /**test**/
 
 .black {
     background: #000;
+    color: #eee;
+}
+.black-tint-1 {
+    background: #222;
     color: #eee;
 }
 .blue {
@@ -55,4 +113,10 @@ body {
 }
 .emerald {
     background: seagreen;
+}
+.emerald-border {
+    border: 1px solid seagreen !important;
+}
+.bg-beige {
+    background: beige;
 }
