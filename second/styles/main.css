@@ -116,10 +116,11 @@ a.brand {
   background: lime;
 }
 .emerald {
-  background: #6175bd;
+  background: #425cbb;
+  color: beige;
 }
 .emerald-border {
-  border: 1px solid #6175bd !important;
+  border: 1px solid #425cbb !important;
 }
 .bg-beige {
   background: beige;
@@ -249,7 +250,7 @@ a.brand {
 }
 @media (min-width: 1200px) {
   body {
-    padding: 0 115px !important;
+    padding: 0 8.5% !important;
   }
   .block-title {
     font-size: 2rem;
