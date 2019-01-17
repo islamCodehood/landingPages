@@ -1,0 +1,30 @@
+div {
+    width: 350px;
+    height: 700px;
+    background-image: url("../img/flowers.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    margin: auto;
+}
+div::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%; 
+    border: 5px solid #222;
+    width: 150%;
+    height: 80%;
+    z-index: -1000;
+}
+ div::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%; 
+    border: 5px solid #222;
+    width: 150%;
+    height: 80%;
+   
+} 
