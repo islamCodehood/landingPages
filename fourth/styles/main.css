@@ -1,0 +1,51 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+ background: rgb(160, 46, 1);  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: -100000;
+    position: relative;
+}
+.ht {
+    height: 500px;
+    width: 440px;
+    
+}
+.transparent {
+    
+}
+.beige {
+    background: rgb(194, 194, 175) ;
+}
+.txt {
+    
+    color: rgba(160, 46, 1, 0.823);
+    
+}
+
+.hero-img {
+    background-image: url("../img/fashion.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper {
+    height: 90px;
+    width: 430px;
+    position: absolute;
+    top: 80%;
+    left: -30%;
+    z-index: 100;
+}
+.wrapper-1 {
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    background: rgb(253, 203, 93);
+    top: 70%;
+    left: -60%;
+    z-index: -10;
+}
