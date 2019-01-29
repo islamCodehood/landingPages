@@ -18,10 +18,10 @@
     <title>Blog</title>
   </head>
   <body>
-    <div class="container-fluid px-0 wrapper-mw">
+    <div class="container-fluid px-0 wrapper">
       <!--NavBar-->
-      <nav class="navbar navbar-expand-md navbar-light py-0">
-        <a class="navbar-brand" href="#">LO</a>
+      <nav class="navbar navbar-expand-md navbar-light nav-padding">
+        <a class="navbar-brand display-4" href="#">LO</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,26 +36,89 @@
 
         <div class="collapse navbar-collapse right-dir" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link order-4 active" href="#"
-              >Home <span class="sr-only">(current)</span></a
+            <a class="nav-item nav-link order-md-3" href="#">ABOUT</a>
+            <a class="nav-item nav-link order-md-2" href="#">ARTICLES</a>
+            <a
+              class="nav-item nav-link order-md-1 ml-md-3 border-shadow"
+              href="#"
+              >SUBSCRIBE</a
             >
-            <a class="nav-item nav-link order-3" href="#">Features</a>
-            <a class="nav-item nav-link order-2" href="#">Pricing</a>
-            <a class="nav-item nav-link order-1" href="#">Disabled</a>
           </div>
         </div>
       </nav>
       <!--Hero img-->
       <div class="container-fluid px-0">
-        <div class="row no-gutters ht-lg"><div class="hero-img"></div></div>
+        <div class="row no-gutters ht-lg">
+          <div
+            class="hero-img d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 class="display-2 txt-bold">LOMBOK</h1>
+            <p class="h5">HOLISTIC HEALTH</p>
+            <hr class="pale-line" />
+          </div>
+        </div>
       </div>
       <!--Latest articles cards-->
-      <div class="container"></div>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <h2 class="h5 text-center mt-custom">LATEST ARTICLES</h2>
+          </div>
+          <div class="col-12">
+            <hr class="pale-line mt-0 mb-5" />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <dic class="col-sm-4">
+            <div class="card mx-auto mb-3 card-mw">
+              <img class="card-img-top" src="img/build/card-img1.jpeg" alt="" />
+              <div class="card-body">
+                <hr class="card-line" />
+                <p class="card-text text-center small txt-pale card-txt-pb">
+                    Some quick example text to build on the card.
+                </p>
+              </div>
+            </div>
+          </dic>
+          <dic class="col-sm-4">
+            <div class="card mx-auto mb-3 card-mw">
+              <img class="card-img-top" src="img/build/card-img2.jpeg" alt="" />
+              <div class="card-body">
+                <hr class="card-line" />
+                <p class="card-text text-center small txt-pale card-txt-pb">
+                  Some quick example text to build on the card.
+                </p>
+              </div>
+            </div>
+          </dic>
+          <dic class="col-sm-4">
+            <div class="card mx-auto mb-3 card-mw">
+              <img class="card-img-top" src="img/build/card-img3.jpeg" alt="" />
+              <div class="card-body">
+                <hr class="card-line" />
+                <p class="card-text text-center small txt-pale card-txt-pb">
+                    Some quick example text to build on the card.
+                </p>
+              </div>
+            </div>
+          </dic>
+        </div>
+      </div>
       <!--About section-->
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6"></div>
-          <div class="col-lg-6"></div>
+        <div class="row justify-content-center no-gutters">
+          <div class="col-md-6">
+            <div class="about-img ht-md mt-custom"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="mt-custom about-para ht-md">
+                    <h2 class="h5 text-center pt-custom">ABOUT</h2>
+                    <hr class="pale-line mt-0 mb-5" />
+                    <p class="small px-custom text-justify txt-pale">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem quos, fugit id magnam, eveniet recusandae quam harum inventore pariatur odio. Nihil nam accusantium error optio qui placeat porro ullam?
+                    </p>
+            </div>
+          </div>
         </div>
       </div>
       <!--Subscribe-->
