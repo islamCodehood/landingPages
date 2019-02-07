@@ -8,7 +8,6 @@ const browserSync = require('browser-sync').create();
 
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
-    .pipe(plumber())
     .pipe(uglify())
     .pipe(gulp.dest('js/minjs'));
 });
@@ -40,5 +39,6 @@ gulp.task('watch', function() {
     });
     gulp.watch('sass/**/*.sass').on('change', browserSync.reload)
     gulp.watch('*.html').on('change', browserSync.reload)
+    gulp.watch('js/**/*.js').on('change', browserSync.reload)
 });
 gulp.task('default', gulp.series(['scripts', 'styles', 'watch']));
